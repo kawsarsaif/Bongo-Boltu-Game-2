@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <img src="bg.jpg" class="background">
+        <img src="target.png" class="target" id="target">
+        <div class="gun-container">
+            <img src="gun.png" class="gun" id="gun">
+        </div>
+        <div class="scoreboard">
+            Score: <span id="score">0</span> | Time: <span id="timer">40</span>s
+        </div>
+    </div>
+
+    <!-- Win Popup -->
+    <div class="popup" id="popup">
+        <img src="win.png" class="popup-img">
+        <h4>You became a part of history on August 15, 1975.
+        </h4>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+
+    <!-- Audio Files -->
+    <audio id="shoot-sound" src="shoot.mp3"></audio>
+    <audio id="hit-sound" src="hit.mp3"></audio>
+    <audio id="gameOverSound" src="gameover.mp3"></audio>
+
+
+<!-- Share Ideas Link -->
+<a href="https://www.facebook.com/profile.php?id=61560113140365" class="share-ideas" target="_blank">
+    Share funny game ideas with the dev! 🎮
+</a>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
