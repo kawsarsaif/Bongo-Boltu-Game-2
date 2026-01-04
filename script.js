@@ -104,5 +104,18 @@ function restartGame() {
     location.reload();
 }
 
+// 🔥 MAKE TARGET HARD (FASTER MOVEMENT)
+let targetSpeed = 5; // hard level
+
+setInterval(() => {
+    let maxX = window.innerWidth - target.offsetWidth;
+    let maxY = window.innerHeight - target.offsetHeight;
+
+    let randomX = Math.random() * maxX;
+    let randomY = Math.random() * maxY;
+
+    target.style.left = randomX + "px";
+    target.style.top = randomY + "px";
+}, 800 / targetSpeed);
 
 
