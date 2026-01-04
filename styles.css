@@ -31,11 +31,11 @@ body {
 .target {
     position: absolute;
     width: 40px; /* Bigger Target */
-    animation: moveTarget 3s infinite linear alternate; /* Slower Movement */
+    animation: moveTarget 8s infinite linear alternate; /* Slower Movement */
 }
 
 @keyframes moveTarget {
-    0% { top: 80%; left: 55%; }
+    0% { top: 10%; left: 55%; }
     25% { top: 45%; left: 80%; }
     50% { top: 60%; left: 50%; }
     75% { top: 40%; left: 20%; }
