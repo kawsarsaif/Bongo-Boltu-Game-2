@@ -119,10 +119,10 @@ button:hover {
     left: 10%;
     transform: translateX(-50%);
     color: yellow;
-    font-size: 16px;
+    font-size: 10px;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.7);
-    padding: 5px 10px;
+    padding: 3px 70px;
     border-radius: 5px;
 }
 
