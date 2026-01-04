@@ -10,7 +10,7 @@ const hitSound = document.getElementById("hit-sound");
 const gameOverSound = document.getElementById("gameOverSound");
 
 let score = 0;
-let timeLeft = 50;
+let timeLeft = 30;
 
 // 🔄 Rotate Gun Towards Touch (For Mobile)
 document.addEventListener("mousemove", rotateGun);
@@ -43,7 +43,7 @@ function shootBullet(event) {
     bullet.style.left = `${gunX}px`;
     bullet.style.top = `${gunY}px`;
 
-    let bulletSpeed = 2;
+    let bulletSpeed = 10;
     shootSound.play();
 
     let bulletInterval = setInterval(() => {
@@ -61,7 +61,7 @@ function shootBullet(event) {
             setTimeout(() => target.style.display = "block", 1000); // Respawn after 1 sec
 
             // 🎉 Show Popup if Score = 15
-            if (score >= 5) {
+            if (score >= 10) {
                 popup.style.display = "block";
                 gameOverSound.play();
 
@@ -103,19 +103,5 @@ let timerInterval = setInterval(() => {
 function restartGame() {
     location.reload();
 }
-
-// 🔥 MAKE TARGET HARD (FASTER MOVEMENT)
-let targetSpeed = 5; // hard level
-
-setInterval(() => {
-    let maxX = window.innerWidth - target.offsetWidth;
-    let maxY = window.innerHeight - target.offsetHeight;
-
-    let randomX = Math.random() * maxX;
-    let randomY = Math.random() * maxY;
-
-    target.style.left = randomX + "px";
-    target.style.top = randomY + "px";
-}, 800 / targetSpeed);
 
 
