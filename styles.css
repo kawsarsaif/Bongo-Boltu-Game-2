@@ -116,7 +116,7 @@ button:hover {
 .share-ideas {
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: 10%;
     transform: translateX(-50%);
     color: yellow;
     font-size: 10px;
