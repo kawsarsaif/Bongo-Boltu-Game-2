@@ -31,7 +31,7 @@ body {
 .target {
     position: absolute;
     width: 40px; /* Bigger Target */
-    animation: moveTarget 8s infinite linear alternate; /* Slower Movement */
+    animation: moveTarget 20s infinite linear alternate; /* Slower Movement */
 }
 
 @keyframes moveTarget {
